@@ -1,0 +1,72 @@
+\documentclass[12pt, a4paper]{ctexart}
+
+% 页面设置
+\usepackage{geometry}
+\geometry{left=3cm, right=3cm, top=3cm, bottom=3cm}
+
+% 常用宏包
+\usepackage{graphicx}          % 插入图片
+\usepackage{amsmath, amssymb}  % 数学公式
+\usepackage{booktabs}          % 表格美化
+\usepackage{hyperref}          % 超链接
+\usepackage{titlesec}          % 自定义标题格式
+
+% 增大行距
+\linespread{1.15}  % 设置行距为1.5倍行距
+
+% 设置英文字体与姓名一致
+\renewcommand{\rmdefault}{ptm}  % 设置罗马字体为 Times New Roman，适用于所有英文部分
+
+% 去除页眉页脚和页码
+\pagestyle{empty}
+
+% 自定义 \section 标题左对齐
+\titleformat{\section}
+  {\normalfont\Large\bfseries} % 格式：正常字体，大号，加粗
+  {\thesection}{1em}{}         % 编号和间距
+
+% 去除默认标题的居中对齐
+\makeatletter
+\def\maketitle{
+  \begin{center} % 不要默认的居中
+    \begin{flushleft} % 启用左对齐
+    {\LARGE \textbf{\@title}}\\[1em] % 标题左对齐
+    {\large \@author}\\[1em] % 作者左对齐
+    \end{flushleft}
+  \end{center}
+}
+\makeatother
+
+% 题目信息
+\title{Implimentation of Francis QR Algorithm \\ for Real Matrices}
+\author{Haoyang Chen, School of Data Science, Fudan University 
+    \\ 23307130004@m.fudan.edu.cn}
+\date{} % 设置为空，以移除日期
+
+\usepackage[ruled]{algorithm2e}                  %style 1
+%\usepackage[ruled,vlined]{algorithm2e}          %style 2
+%\usepackage[linesnumbered,boxed]{algorithm2e}   %style 3
+
+\begin{document}
+
+% 标题
+\maketitle
+
+% 正文部分
+\section{Question1}
+
+
+
+\section{Question2}
+
+
+\section{Question3}
+
+
+% \begin{algorithm}[H]
+%     \caption{Hessenberg Transformation}
+%     \KwIn{}
+%     \KwOut{}
+% 
+%     \Return{$H, Q$}
+% \end{algorithm}
