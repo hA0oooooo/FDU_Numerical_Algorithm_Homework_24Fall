@@ -1,2 +1,2 @@
-# fdu_numerical_algorithm_24fall
-record life
+# FDU_Numerical_Algorithm_24Fall
+**record life...**
